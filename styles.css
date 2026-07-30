@@ -5,19 +5,19 @@
 
 /* 1. CSS VARIABLES */
 :root {
-  /* Color Palette (Soft Pink Canvas + Slate Grey-Green-Blue Typography) */
+  /* Color Palette (Soft Pink Canvas + Refined Grey-Green Typography) */
   --bg-main: #FDF2F0; /* Ніжний рожевий фон */
   --bg-secondary: #F7E5E2; /* Пастельний рожевий для блок-секцій */
-  --color-eucalyptus: #7B9582; /* М'який евкаліптовий */
-  --color-dark-eucalyptus: #213531; /* Темний сіро-зелено-голубий акцент */
+  --color-eucalyptus: #7A9382; /* М'який евкаліптовий */
+  --color-dark-eucalyptus: #26362F; /* Темний сіро-зелений акцент */
   --color-dusty-pink: #D8A097;
   --color-soft-pink: #F3D3CE;
   --color-beige: #E6D5C3;
   --color-warm-brown: #9B7E6B;
-  --color-text: #283C38; /* Колір літер: вишуканий сіро-зелено-голубий */
-  --color-text-light: #4D645E; /* Світлий сіро-зелено-голубий для другорядного тексту */
-  --color-button: #36504A; /* Кнопки в сіро-зелено-голубому тоні */
-  --color-button-hover: #233732;
+  --color-text: #2F3E37; /* Колір літер: шляхетний сіро-зелений */
+  --color-text-light: #54665D; /* Світлий сіро-зелений для другорядного тексту */
+  --color-button: #3D5247; /* Кнопки в сіро-зеленому тоні */
+  --color-button-hover: #2C3D34;
   --color-card-bg: rgba(255, 255, 255, 0.92);
 
   /* Typography */
