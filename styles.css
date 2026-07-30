@@ -5,20 +5,20 @@
 
 /* 1. CSS VARIABLES */
 :root {
-  /* Color Palette (Eucalyptus Natural Theme) */
-  --bg-main: #EEF3EC; /* Soft Eucalyptus tint for main background */
-  --bg-secondary: #E1EBE0; /* Deeper Eucalyptus pastel background for alternating sections */
-  --color-eucalyptus: #8B9B82;
-  --color-dark-eucalyptus: #45543D;
-  --color-dusty-pink: #D9A29B;
-  --color-soft-pink: #F2D5D0;
-  --color-beige: #D9CBC0;
-  --color-warm-brown: #7D6B5A;
-  --color-text: #263124;
-  --color-text-light: #485445;
-  --color-button: #4F6048;
-  --color-button-hover: #3D4C37;
-  --color-card-bg: rgba(255, 255, 255, 0.90);
+  /* Color Palette (Soft Pink Canvas + Slate Grey-Blue Typography) */
+  --bg-main: #FDF2F0; /* Ніжний рожевий фон */
+  --bg-secondary: #F7E5E2; /* Пастельний рожевий для блок-секцій */
+  --color-eucalyptus: #8CA0B0; /* Сіро-голубий шарм */
+  --color-dark-eucalyptus: #3A4E61; /* Темний сіро-голубий акцент */
+  --color-dusty-pink: #E5ACA5;
+  --color-soft-pink: #F3D5D0;
+  --color-beige: #E8DAD5;
+  --color-warm-brown: #586B7C;
+  --color-text: #2B3A48; /* Колір літер: вишуканий сіро-голубий */
+  --color-text-light: #526475; /* Світлий сіро-голубий для другорядного тексту */
+  --color-button: #3A4E61; /* Кнопки в сіро-голубому стилі */
+  --color-button-hover: #253544;
+  --color-card-bg: rgba(255, 255, 255, 0.92);
 
   /* Typography */
   --font-heading: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
@@ -37,9 +37,9 @@
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-pill: 9999px;
-  --shadow-subtle: 0 10px 30px rgba(60, 75, 55, 0.08);
-  --shadow-glass: 0 8px 32px 0 rgba(70, 85, 65, 0.10);
-  --border-glass: 1px solid rgba(255, 255, 255, 0.7);
+  --shadow-subtle: 0 10px 30px rgba(58, 78, 97, 0.08);
+  --shadow-glass: 0 8px 32px 0 rgba(58, 78, 97, 0.10);
+  --border-glass: 1px solid rgba(255, 255, 255, 0.75);
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -62,8 +62,8 @@ html {
 
 body {
   background-color: var(--bg-main);
-  background-image: radial-gradient(circle at 15% 20%, rgba(139, 155, 130, 0.12) 0%, transparent 45%),
-                    radial-gradient(circle at 85% 80%, rgba(217, 162, 155, 0.10) 0%, transparent 45%);
+  background-image: radial-gradient(circle at 15% 20%, rgba(229, 172, 165, 0.25) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 80%, rgba(140, 160, 176, 0.18) 0%, transparent 50%);
   color: var(--color-text);
   font-family: var(--font-body);
   font-weight: 400;
@@ -231,15 +231,15 @@ button, input, select, textarea {
   z-index: 1000;
   padding: 1.25rem 0;
   transition: all var(--transition-smooth);
-  background: rgba(250, 248, 245, 0.4);
+  background: rgba(253, 242, 240, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(231, 201, 197, 0.2);
+  border-bottom: 1px solid rgba(229, 172, 165, 0.25);
 }
 
 .navbar.scrolled {
   padding: 0.85rem 0;
-  background: rgba(250, 248, 245, 0.92);
+  background: rgba(253, 242, 240, 0.95);
   box-shadow: var(--shadow-subtle);
 }
 
@@ -321,7 +321,7 @@ button, input, select, textarea {
     width: 80%;
     max-width: 360px;
     height: 100vh;
-    background: rgba(250, 248, 245, 0.98);
+    background: rgba(253, 242, 240, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
