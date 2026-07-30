@@ -5,20 +5,20 @@
 
 /* 1. CSS VARIABLES */
 :root {
-  /* Color Palette (Rich & Vibrant Natural Tones) */
-  --bg-main: #FAF7F2;
-  --bg-secondary: #F3EBE1;
-  --color-eucalyptus: #9BA892;
-  --color-dark-eucalyptus: #63725A;
-  --color-dusty-pink: #E0AAA3;
-  --color-soft-pink: #F3D3CE;
-  --color-beige: #E2D1BF;
-  --color-warm-brown: #A6866C;
-  --color-text: #484139;
-  --color-text-light: #736A60;
-  --color-button: #687661;
-  --color-button-hover: #55634E;
-  --color-card-bg: rgba(255, 255, 255, 0.82);
+  /* Color Palette (Eucalyptus Natural Theme) */
+  --bg-main: #EEF3EC; /* Soft Eucalyptus tint for main background */
+  --bg-secondary: #E1EBE0; /* Deeper Eucalyptus pastel background for alternating sections */
+  --color-eucalyptus: #8B9B82;
+  --color-dark-eucalyptus: #45543D;
+  --color-dusty-pink: #D9A29B;
+  --color-soft-pink: #F2D5D0;
+  --color-beige: #D9CBC0;
+  --color-warm-brown: #7D6B5A;
+  --color-text: #263124;
+  --color-text-light: #485445;
+  --color-button: #4F6048;
+  --color-button-hover: #3D4C37;
+  --color-card-bg: rgba(255, 255, 255, 0.90);
 
   /* Typography */
   --font-heading: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
@@ -37,9 +37,9 @@
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-pill: 9999px;
-  --shadow-subtle: 0 10px 30px rgba(90, 84, 77, 0.05);
-  --shadow-glass: 0 8px 32px 0 rgba(122, 132, 113, 0.08);
-  --border-glass: 1px solid rgba(255, 255, 255, 0.6);
+  --shadow-subtle: 0 10px 30px rgba(60, 75, 55, 0.08);
+  --shadow-glass: 0 8px 32px 0 rgba(70, 85, 65, 0.10);
+  --border-glass: 1px solid rgba(255, 255, 255, 0.7);
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -62,6 +62,8 @@ html {
 
 body {
   background-color: var(--bg-main);
+  background-image: radial-gradient(circle at 15% 20%, rgba(139, 155, 130, 0.12) 0%, transparent 45%),
+                    radial-gradient(circle at 85% 80%, rgba(217, 162, 155, 0.10) 0%, transparent 45%);
   color: var(--color-text);
   font-family: var(--font-body);
   font-weight: 400;
@@ -73,6 +75,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -50px;
+  right: -50px;
+  width: 450px;
+  height: 450px;
+  background-image: url('./src/assets/images/watercolor_eucalyptus_accents_1785319820967.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.20;
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: multiply;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -50px;
+  left: -50px;
+  width: 450px;
+  height: 450px;
+  background-image: url('./src/assets/images/watercolor_eucalyptus_accents_1785319820967.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleX(-1) scaleY(-1);
+  opacity: 0.20;
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: multiply;
 }
 
 /* Typography Defaults */
