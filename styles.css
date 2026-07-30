@@ -5,19 +5,19 @@
 
 /* 1. CSS VARIABLES */
 :root {
-  /* Color Palette (Soft Pink Canvas + Slate Grey-Blue Typography) */
+  /* Color Palette (Soft Pink Canvas + Slate Grey-Green-Blue Typography) */
   --bg-main: #FDF2F0; /* Ніжний рожевий фон */
   --bg-secondary: #F7E5E2; /* Пастельний рожевий для блок-секцій */
-  --color-eucalyptus: #8CA0B0; /* Сіро-голубий шарм */
-  --color-dark-eucalyptus: #3A4E61; /* Темний сіро-голубий акцент */
-  --color-dusty-pink: #E5ACA5;
-  --color-soft-pink: #F3D5D0;
-  --color-beige: #E8DAD5;
-  --color-warm-brown: #586B7C;
-  --color-text: #2B3A48; /* Колір літер: вишуканий сіро-голубий */
-  --color-text-light: #526475; /* Світлий сіро-голубий для другорядного тексту */
-  --color-button: #3A4E61; /* Кнопки в сіро-голубому стилі */
-  --color-button-hover: #253544;
+  --color-eucalyptus: #7B9582; /* М'який евкаліптовий */
+  --color-dark-eucalyptus: #213531; /* Темний сіро-зелено-голубий акцент */
+  --color-dusty-pink: #D8A097;
+  --color-soft-pink: #F3D3CE;
+  --color-beige: #E6D5C3;
+  --color-warm-brown: #9B7E6B;
+  --color-text: #283C38; /* Колір літер: вишуканий сіро-зелено-голубий */
+  --color-text-light: #4D645E; /* Світлий сіро-зелено-голубий для другорядного тексту */
+  --color-button: #36504A; /* Кнопки в сіро-зелено-голубому тоні */
+  --color-button-hover: #233732;
   --color-card-bg: rgba(255, 255, 255, 0.92);
 
   /* Typography */
