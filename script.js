@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Stored or Default Web App URL for Google Apps Script
+const DEFAULT_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzI7CIUfGqVB6RAO3I_5BUrmJlOORIrxtnb2e_h4lKF3zJW9YwDKY7JUOvP8L8ykgtrlQ/exec';
 let GOOGLE_APPS_SCRIPT_URL = localStorage.getItem('wedding_apps_script_url') || '';
 
 /* -------------------------------------------------------------------------- */
