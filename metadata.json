@@ -1,0 +1,6 @@
+{
+  "name": "Весілля Богдана та Олександри",
+  "description": "Елегантний бутіковий весільний сайт для Богдана та Олександри. 03 жовтня 2026, MORAY Resort.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
