@@ -378,7 +378,7 @@ button, input, select, textarea {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(250, 248, 245, 0.55) 0%, rgba(250, 248, 245, 0.92) 80%);
+  background: radial-gradient(circle at center, rgba(253, 242, 240, 0.55) 0%, rgba(253, 242, 240, 0.92) 80%);
   z-index: 2;
 }
 
@@ -1281,3 +1281,15 @@ button, input, select, textarea {
   opacity: 1;
   filter: blur(0);
 }
+
+/* Smartphone & Mobile Display Overrides to guarantee visibility */
+@media (max-width: 768px) {
+  .reveal-fade,
+  .reveal-slide-up,
+  .reveal-blur {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+

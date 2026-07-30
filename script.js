@@ -343,10 +343,16 @@ function showToast(message) {
 function initScrollAnimations() {
   const revealElements = document.querySelectorAll('.reveal-fade, .reveal-slide-up, .reveal-blur');
 
+  // Immediately reveal all elements on small screen devices to prevent hidden content
+  if (window.innerWidth <= 768) {
+    revealElements.forEach(el => el.classList.add('revealed'));
+    return;
+  }
+
   const observerOptions = {
     root: null,
-    rootMargin: '0px 0px -60px 0px',
-    threshold: 0.15
+    rootMargin: '100px 0px 50px 0px',
+    threshold: 0.05
   };
 
   const revealObserver = new IntersectionObserver((entries, observer) => {
