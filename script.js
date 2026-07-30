@@ -13,9 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initGoogleSheetsConfigModal();
 });
 
-// Stored or Default Web App URL for Google Apps Script
-const DEFAULT_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzI7CIUfGqVB6RAO3I_5BUrmJlOORIrxtnb2e_h4lKF3zJW9YwDKY7JUOvP8L8ykgtrlQ/exec';
-let GOOGLE_APPS_SCRIPT_URL = localStorage.getItem('wedding_apps_script_url') || '';
+// URL-адреса Google Apps Script (Web App).
+const DEFAULT_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzI7CIUfGqVB6RAO3I_5BUrmJlOORIrxtnb2e_h4lKF3zJW9YwDKY7JUOvP8L8ykgtrlQ/exec'; 
+
+let GOOGLE_APPS_SCRIPT_URL = localStorage.getItem('wedding_apps_script_url') || DEFAULT_APPS_SCRIPT_URL;
 
 /* -------------------------------------------------------------------------- */
 /* 1. NAVBAR & NAVIGATION                                                    */
@@ -168,7 +169,10 @@ function initRsvpForm() {
 
     // 2. Send to Google Sheets Apps Script Web App (if configured)
     let sendError = null;
-    const scriptUrl = GOOGLE_APPS_SCRIPT_URL || localStorage.getItem('wedding_apps_script_url');
+    const storedUrl = localStorage.getItem('wedding_apps_script_url');
+    const scriptUrl = (storedUrl && storedUrl.startsWith('https://script.google.com')) 
+      ? storedUrl 
+      : (GOOGLE_APPS_SCRIPT_URL && GOOGLE_APPS_SCRIPT_URL.startsWith('https://script.google.com') ? GOOGLE_APPS_SCRIPT_URL : DEFAULT_APPS_SCRIPT_URL);
 
     if (scriptUrl && scriptUrl.startsWith('https://script.google.com')) {
       try {
