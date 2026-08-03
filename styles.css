@@ -12,7 +12,7 @@
   --color-dark-eucalyptus: #203A2D; /* Темний евкаліптовий акцент */
   --color-dusty-pink: #D8A097;
   --color-soft-pink: #F3D3CE;
-  --color-beige: #E6D5C3;
+  --color-beige: #F5EFE6; /* Біло-бежевий */
   --color-warm-brown: #9B7E6B;
   --color-text: #2D483A; /* Колір літер: зелено-евкаліптовий */
   --color-text-light: #4A6B5B; /* Світлий зелено-евкаліптовий для другорядного тексту */
@@ -896,7 +896,10 @@ button, input, select, textarea {
 .bg-eucalyptus { background-color: var(--color-eucalyptus); }
 .bg-dusty-pink { background-color: var(--color-dusty-pink); }
 .bg-soft-pink { background-color: var(--color-soft-pink); }
-.bg-beige { background-color: var(--color-beige); }
+.bg-beige { 
+  background-color: var(--color-beige); 
+  border: 3px solid #EFE6DA;
+}
 .bg-warm-brown { background-color: var(--color-warm-brown); }
 
 /* 11. FLOWERS & GIFTS SECTIONS */
